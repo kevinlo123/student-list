@@ -1,22 +1,34 @@
-/*when user gives the name of the student they press add to log it to the list and print to show all the names added*/
-var students = [];
-var input1;
-// students.forEach(function(name1){
-//   $("ol").append("<li>" + name1 + "</li>");
-// });
-// console.log(students);
+ /************* functional *******************************/
+document.addEventListener("DOMContentLoaded" , () => {
+  
+  //variables
 
-$(document).ready(function(){
- $("#add").on("click", function(){
-   input1 = $("input").val();
-   students.push(input1);
-   $("input").val("");
+  let name = [];
+  let studentName = document.querySelector("#studentNames");
+  const addButton = document.querySelector("#addButton");
+  const printButton = document.querySelector("#printButton");
+  const list = document.querySelector("#orderedList");
+  const clearButton = document.querySelector("#clearButton");
+  
+  //event add students handler
+
+ addButton.addEventListener("click" , () => {
+   name.push(studentName.value);
+   console.log(name);
+   studentNames.value = "";
  });
+
+  //event printing names
+  
+  printButton.addEventListener("click" , () =>{
+    list.innerHTML = "<li>" + name.join("</li><li>") + "</li>";
+  });
+  
+  //event removing all names
+  
+  clearButton.addEventListener("click" , () =>{
+    name.splice(0,10);
+    list.innerHTML = "";
+  });
 });
-
- $("#print").on("click", function(){
-   $("li").remove();
-   students.forEach(function (el){
-   $("ol").append("<li>" + el + "</li>");
-   });
- });
+/********************* object oriented ************************/
