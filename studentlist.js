@@ -1,4 +1,5 @@
  /************* functional *******************************/
+
 document.addEventListener("DOMContentLoaded" , () => {
   
   //variables
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded" , () => {
  addButton.addEventListener("click" , () => {
    name.push(studentName.value);
    console.log(name);
-   studentNames.value = "";
+   studentName.value = "";
  });
 
   //event printing names
@@ -27,8 +28,7 @@ document.addEventListener("DOMContentLoaded" , () => {
   //event removing all names
   
   clearButton.addEventListener("click" , () =>{
-    name.splice(0,10);
+    name.splice(0,50);
     list.innerHTML = "";
   });
 });
-/********************* object oriented ************************/
