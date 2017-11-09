@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded" , () => {
   //event removing all names
   
   clearButton.addEventListener("click" , () =>{
-    name.splice(0,50);
+    name = [];
     list.innerHTML = "";
   });
 });
