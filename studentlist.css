@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #e1f1f6;
+    font-family: 'Quicksand' , sans-serif;
+}
+
+.main_wrapper{
+    display: flex;
+    flex-flow: column;
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+    transition: .5s all;
+    border:1px solid lightgray;
+}
+
+.student_list_text{
+    text-align: center;
+    color: #3498db;
+    font-size: 2.5rem;
+    border-bottom: 1px solid lightgrey;     
+}
+
+#studentNames , #addButton , #printButton , #clearButton{
+    height: 2rem;
+    font-size: 1rem; 
+    border-radius: 3px;
+    border: 1px solid #3498db;
+    background: white;
+    color: #3498db;
+}
+
+.button_wrapper{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#addButton , #printButton , #clearButton{
+    width: 25%;
+}

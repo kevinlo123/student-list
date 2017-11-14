@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded" , () => {
   //event printing names
   
   printButton.addEventListener("click" , () =>{
-    list.innerHTML = "<li>" + name.join("</li><li>") + "</li>";
+    list.innerHTML = "<li class='students'>" + name.join("</li><li class='students'>") + "</li>";
   });
   
   //event removing all names
@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded" , () => {
     list.innerHTML = "";
   });
 });
+

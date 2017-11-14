@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>student list</title>
+    <link rel="stylesheet" href="studentlist.css">
   </head>
   <body>
-    <h1>Student List!</h1>
-    <input id="studentNames" type="text" placeholder="name">
-    <button id="addButton">add</button>
-    <button id="printButton">print</button>
-    <button id="clearButton">clear list</button>
-    <ol id="orderedList"></ol>
+    <div class="main_wrapper">
+      <h1 class="student_list_text">Student List!</h1>
+      <input id="studentNames" type="text" placeholder="Students name">
+      <div class="button_wrapper">
+        <button id="addButton">add</button>
+        <button id="printButton">print</button>
+        <button id="clearButton">clear list</button>  
+      </div>
+      <ol id="orderedList"></ol>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="studentlist.js"></script>
   </body>
